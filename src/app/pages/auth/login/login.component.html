@@ -1,0 +1,86 @@
+<div class="container">
+  <div class="row">
+    <div class="box-back"></div>
+    <div class="box-left">
+        <h1 class="title">Conectando ao futuro</h1>
+
+        <h3 class="sub">Aqui voce vai encontrar:</h3>
+        <p class="prg">- Cursos Gratuitos</p>
+        <p class="prg">- Vagas direcionados</p>
+        <p class="prg">- Lives e eventos  para voce de preparar</p>
+        <p class="prg">- Oportunidades de testas seu conhecimento</p>
+
+    </div>
+
+
+    <div class="box-rigth">
+      <h3 class="sub2">Bem vindo ao <strong>Conexão !</strong></h3>
+      <p>Conectando e desenvolvendo jovens</p>
+      <mat-tab-group>
+        <mat-tab label="Jovens">
+
+            <form class="form">
+              <p>Preencha os dados corretamente para acessar a plataforma</p>
+                <mat-form-field appearance="outline">
+                  <input matInput placeholder="Email" type="email">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                  <input matInput placeholder="Senha" type="password">
+                </mat-form-field>
+
+                <div style="color: rgb(110, 110, 110);margin-top: 40px;display: flex;flex-direction: row;width: 90%;justify-content: space-between;">
+
+                  <mat-checkbox class="example-margin">Lembrar me</mat-checkbox>
+                  <a>Esqueceu a senha ?</a>
+
+                </div>
+                <div class="action">
+                  <button mat-stroked-button color="accent" class="btn-block">Cadastro</button>
+                  <button mat-stroked-button color="accent" class="btn-block" (click)="goToHome()">Entrar</button>
+                </div>
+
+            </form>
+            <div class="social" >
+
+              <button class="btnsocial">
+                <img src="../../../../assets/face.svg"/>
+              </button>
+              <button class="btnsocial">
+                <img src="../../../../assets/google.svg"/>
+              </button>
+
+            </div>
+
+
+        </mat-tab>
+
+        <mat-tab label="Empresas">
+            <form class="form">
+              <p>Aqui sua empresa encontra o profissional perfeito</p>
+                <mat-form-field appearance="outline">
+                  <input matInput placeholder="CNPJ" type="text">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                  <input matInput placeholder="Senha" type="password">
+                </mat-form-field>
+                <div style="margin-top: 40px;">
+
+                  <mat-checkbox class="example-margin">Lembrar me</mat-checkbox>
+
+                </div>
+                <div class="action">
+                  <button mat-stroked-button color="accent" class="btn-block">Cadastro</button>
+                  <button mat-stroked-button color="accent" class="btn-block" (click)="goToHome()">Entrar</button>
+                </div>
+            </form>
+        </mat-tab>
+      </mat-tab-group>
+
+    </div>
+
+  </div>
+
+
+</div>
